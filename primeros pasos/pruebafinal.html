@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>CV Proyecto final</title>
+    <script src="eventos.js"></script>
+</head>
+                        <!--Acá empieza la botonera lateral-->
+<div class="botonera">
+    <a href="#personales"><img class="boton" src="https://w7.pngwing.com/pngs/647/460/png-transparent-computer-icons-open-person-family-icon-black-silhouette-black-white-people-thumbnail.png" id="pers" onmousemove="enAmarillo1()" onmouseleave="enNegro1()" alt="Mis datos personales"> </a>
+    <a href="#laboral"><img class="boton" src="https://w7.pngwing.com/pngs/58/215/png-transparent-computer-icons-work-experience-experiential-text-rectangle-resume-thumbnail.png" id="labo" onmousemove="enAmarillo2()" onmouseleave="enNegro2()" alt="Mi experiencia laboral"> </a>
+    <a href="#conocimiento"><img class="boton" src="https://w7.pngwing.com/pngs/329/868/png-transparent-domain-knowledge-innovation-artificial-intelligence-computer-icons-knowledge-miscellaneous-logo-knowledge-management-thumbnail.png" id="cono" onmousemove="enAmarillo3()" onmouseleave="enNegro3()" alt= "Mis conocimientos"> </a>
+    <a href="#voluntariados"><img class="boton" src="data:image/png;base64,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" id="volu" onmousemove="enAmarillo4()" onmouseleave="enNegro4()" alt="Voluntariados"> </a>
+</div>
+<body>
+                        <!--Acá empieza lo principal del CV-->
+<div class="degrade">
+    <div class="grilla">
+<div class="intro">
+    <div class="nombres">Lillian Hart</div>
+    <div class="bajada">Licenciada en economia</div>
+    <div class="descripcion">Creativa, innovadora, buscando desafios</div>
+   
+</div>
+<img src="https://randomuser.me/api/portraits/women/27.jpg" class="perfil">
+    </div>
+</div> <!--Acá termina lo principal del cv-->
+                        <!--Acá empieza el contenido del CV-->  
+<div class="caja"  id="personales">
+       <div class="text">    
+        <h2>Mis datos personales:</h2>
+        <ul>
+          <li>Mail:lillian.hart@example.com</li>
+           <li>Naci el: 9/4/1967</li>
+           <li>Direccion: 4052 N Stelling Rd</li>
+           <li>Celular: (644) 733-9086</li>
+       </ul>
+    </div>
+</div>
+
+<div class="caja" id="laboral">
+    <div class="titulo">Mi experiencia laboral:</div>
+    <div class="text">    
+        <ul>
+           <li>Mariashop-Emprendimiento</li>
+               <p>Agosto 2015-Actualidad</p>
+           <li>Supermecados Coto-Cajera</li>
+               <p>Marzo 2012-Junio 2015</p>
+        </ul>
+    </div>
+</div>
+
+<div class="caja" id="conocimientos">
+    <div class="titulo">Mis conocimientos</div>
+    <div class="text">    
+    <h4>Lic. en Ciencias Economicas</h4>
+    <p>Universidad de Buenos Aires</p>
+    <h3>Otros conocimientos:</h3>
+    <ul>
+        <li>Base de datos</li>
+        <li>Paquete office</li>
+        <li>Lenguajes de programacion</li>
+    </ul>
+
+    </div>
+</div>
+
+<div class="caja" id="Voluntariados">
+    <div class="titulo">Voluntariados</div>
+    <div class="text">    
+        <ul>
+            <li>Movimiento Scout del mundo</li>
+            <li>Juegos olimpicos de la juventud</li>
+        </ul>
+    </div>
+</div>
+    </body>
+</html>
